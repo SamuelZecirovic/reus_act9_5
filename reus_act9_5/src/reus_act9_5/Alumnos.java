@@ -21,7 +21,7 @@ public class Alumnos extends Persona  {
 	public void setAsistencia() {
 		return;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Alumnos [calificacion=" + calificacion + ", nombre=" + nombre + ", sexo=" + sexo + ", edad=" + edad
