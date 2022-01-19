@@ -2,10 +2,10 @@ package reus_act9_5;
 
 public class Persona {
 
-	String nombre;
-	char sexo;
-	int edad;
-	
+	protected String nombre;
+	protected char sexo;
+	protected int edad;
+	protected boolean asistencia;
 	
 	
 	public String getNombre() {
@@ -32,18 +32,29 @@ public class Persona {
 		this.edad = edad;
 	}
 
+	public boolean isAsistencia() {
+		return asistencia;
+	}
 
-	public Persona(String nombre, char sexo, int edad) {
+	public void setAsistencia(boolean asistencia) {
+		this.asistencia = asistencia;
+	}
+
+	public Persona(String nombre, char sexo, int edad, boolean asistencia) {
 		super();
 		this.nombre = nombre;
 		this.sexo = sexo;
 		this.edad = edad;
+		this.asistencia = asistencia;
 	}
 
 	@Override
 	public String toString() {
-		return "Persona [nombre=" + nombre + ", sexo=" + sexo + ", edad=" + edad + "]";
+		return "Persona [nombre=" + nombre + ", sexo=" + sexo + ", edad=" + edad + ", asistencia=" + asistencia + "]";
 	}
+
+
+	
 	
 	
 	
