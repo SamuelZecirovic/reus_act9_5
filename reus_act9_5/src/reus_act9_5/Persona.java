@@ -38,12 +38,11 @@ public abstract class Persona {
 
 	public abstract void setAsistencia();
 
-	public Persona(String nombre, char sexo, int edad, boolean asistencia) {
+	public Persona(String nombre, char sexo, int edad) {
 		super();
 		this.nombre = nombre;
 		this.sexo = sexo;
 		this.edad = edad;
-		this.asistencia = asistencia;
 	}
 
 	@Override

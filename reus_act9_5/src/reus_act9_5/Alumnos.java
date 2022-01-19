@@ -1,5 +1,6 @@
 package reus_act9_5;
 
+import java.util.Random;
 
 public class Alumnos extends Persona  {
 
@@ -14,12 +15,13 @@ public class Alumnos extends Persona  {
 	}
 
 	public Alumnos(String nombre, char sexo, int edad, int calificacion) {
-		super(nombre, sexo, edad, true);
+		super(nombre, sexo, edad);
 		this.calificacion = calificacion;
 	}
 	
 	public void setAsistencia() {
-		return;
+		Random rand = new Random();
+		this.asistencia = rand.nextInt(2) == 0;
 	}
 
 	@Override
