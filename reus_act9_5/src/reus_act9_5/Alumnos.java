@@ -23,7 +23,7 @@ public class Alumnos extends Persona  {
 		Random rand = new Random();
 		this.asistencia = rand.nextInt(2) == 0;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Alumnos [calificacion=" + calificacion + ", nombre=" + nombre + ", sexo=" + sexo + ", edad=" + edad
