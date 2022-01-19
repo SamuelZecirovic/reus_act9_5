@@ -1,6 +1,7 @@
 package reus_act9_5;
 
-public class Alumnos extends Persona {
+
+public class Alumnos extends Persona  {
 
 	private int calificacion;
 	
@@ -12,14 +13,13 @@ public class Alumnos extends Persona {
 		this.calificacion = calificacion;
 	}
 
-	public Alumnos(String nombre, char sexo, int edad, boolean asistencia, int calificacion) {
-		super(nombre, sexo, edad, asistencia);
+	public Alumnos(String nombre, char sexo, int edad, int calificacion) {
+		super(nombre, sexo, edad, true);
 		this.calificacion = calificacion;
 	}
-
-	public Alumnos(String nombre, char sexo, int edad, boolean asistencia) {
-		super(nombre, sexo, edad, asistencia);
-		// TODO Auto-generated constructor stub
+	
+	public void setAsistencia() {
+		return;
 	}
 
 	@Override

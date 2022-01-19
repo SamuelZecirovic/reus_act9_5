@@ -1,6 +1,6 @@
 package reus_act9_5;
 
-public class Persona {
+public abstract class Persona {
 
 	protected String nombre;
 	protected char sexo;
@@ -36,9 +36,7 @@ public class Persona {
 		return asistencia;
 	}
 
-	public void setAsistencia(boolean asistencia) {
-		this.asistencia = asistencia;
-	}
+	public abstract void setAsistencia();
 
 	public Persona(String nombre, char sexo, int edad, boolean asistencia) {
 		super();
