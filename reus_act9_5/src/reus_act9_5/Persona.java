@@ -51,10 +51,4 @@ public abstract class Persona {
 		return "Persona [nombre=" + nombre + ", sexo=" + sexo + ", edad=" + edad + ", asistencia=" + asistencia + "]";
 	}
 
-
-	
-	
-	
-	
-	
 }
