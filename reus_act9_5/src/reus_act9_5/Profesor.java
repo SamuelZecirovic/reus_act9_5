@@ -9,6 +9,7 @@ public class Profesor extends Persona {
 	public Profesor(String nombre, char sexo, int edad, Materias mat) {
 		super(nombre, sexo, edad);
 		this.departamento = mat;
+		setAsistencia();
 	}
 	
 	public Materias getDepartamento() {

@@ -37,14 +37,7 @@ public class Aula  {
 		this.materia = materia;
 	}
 
-	public static void AsistenciasMinimas(Alumnos a) {
-			
-	}
 	
-	public static void EntregarNotas(Alumnos a) {
-		
-	}
-		
 	@Override
 	public String toString() {
 		return "Aula [ID=" + ID + ", Maxestudiantes=" + Maxestudiantes + ", materia=" + materia + "]";

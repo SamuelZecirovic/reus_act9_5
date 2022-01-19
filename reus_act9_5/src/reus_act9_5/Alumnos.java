@@ -17,6 +17,7 @@ public class Alumnos extends Persona  {
 	public Alumnos(String nombre, char sexo, int edad, int calificacion) {
 		super(nombre, sexo, edad);
 		this.calificacion = calificacion;
+		setAsistencia();
 	}
 	
 	public void setAsistencia() {
